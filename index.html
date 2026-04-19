@@ -32,8 +32,9 @@
 
             try {
                 // CHAME SUA URL DE PRODUÇÃO DO N8N AQUI
-                const response = await fetch('http://159.203.134.102:5678/webhook/v1/chat-financeiro', {
+                const response = await fetch('https://reproduction-mart-phantom-consideration.trycloudflare.com/webhook/v1/chat-financeiro', {
                     method: 'POST',
+    // ... resto do código igual
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ chatInput: mensagem })
                 });
